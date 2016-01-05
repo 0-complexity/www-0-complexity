@@ -5,93 +5,74 @@
       {{ range $element :=  $.Site.Pages }}
         {{ if eq .Section "home" }}
           {{ if eq .Title "footer_box" }}
-            <footer class="footer-block">
-            
-              <!-- Container -->
-              <div class="container main clearfix">
-              
-                <!-- Brand -->
-                <div class="brand-col">
-                  <div class="brand">
-                    <img src="{{.Params.footer_logo}}" alt="logo"/>
-                  </div>
-                </div>
-                <!-- /Brand -->
-                
-                <!-- Links -->
-                <div class="links-col">
-                  <!-- Row -->
-                  <div class="row-fluid">
-                    <!-- Col -->
-                    <div class="col-xs-6 col-sm-3 col-md-3 col-md-offset-3">
-                      <h5>{{ .Params.first_section}}</h5>
-                      <ul class="v-links">
-                        <li><a href="{{.Params.first_section_link1}}">{{.Params.first_section_title1}}</a></li>
-                        <li><a href="{{.Params.first_section_link2}}">{{.Params.first_section_title2}}</a></li>
-                        <li><a href="{{.Params.first_section_link3}}">{{.Params.first_section_title3}}</a></li>
-                        <li><a href="{{.Params.first_section_link4}}">{{.Params.first_section_title4}}</a></li>
-                      </ul>
-                    </div>
-                    <!-- Col -->
-                    
-                    <!-- Col -->
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                      <h5>{{ .Params.second_section}}</h5>
-                      <ul class="v-links">
-                        <li><a href="{{.Params.second_section_link1}}">{{.Params.second_section_title1}}</a></li>
-                        <li><a href="{{.Params.second_section_link2}}">{{.Params.second_section_title2}}</a></li>
-                        <li><a href="{{.Params.second_section_link3}}">{{.Params.second_section_title3}}</a></li>
-                        <li><a href="{{.Params.second_section_link4}}">{{.Params.second_section_title4}}</a></li>
-                        <li><a href="{{.Params.second_section_link5}}">{{.Params.second_section_title5}}</a></li>
-                        <li><a href="{{.Params.second_section_link6}}">{{.Params.second_section_title6}}</a></li>
-                      </ul>
-                    </div>
-                    <!-- /Col -->
-                    
-                    <!-- Col -->
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                      <h5>member</h5>
-                      <ul class="v-links">
-                        <li><a href="{{.Params.third_section_link1}}">{{.Params.third_section_title1}}</a></li>
-                        <li><a href="{{.Params.third_section_link2}}">{{.Params.third_section_title2}}</a></li>
-                        <li><a href="{{.Params.third_section_link3}}">{{.Params.third_section_title3}}</a></li>
-                        <li><a href="{{.Params.third_section_link3}}">{{.Params.third_section_title4}}</a></li>
-                      </ul>
-                    </div>
-                    <!-- /Col -->
-                    
-                    <!-- Col -->
-                    <!--
-                    <div class="col-xs-6 col-sm-3 col-md-3 newsletter">
-                      <h5>newsletter</h5>
-                      <form>
-                        <input type="text" class="form-control" placeholder="Email Address">
-                        <button class="btn btn-primary" type="button">get newsletter</button>
-                      </form>
-                    </div>
-                  -->
-                    <!-- /Col -->
-                 </div>
-                 <!-- /Row -->
-                </div>
-                <!-- /Links -->
+            <footer>
+<div class="subfooter">
+<div class="container">
+<div class="row">
+<div class="span4">
+<p>Copyright © 2014 Incubaid. All Rights Reserved</p>
+</div>
+<div class="span8">
+<nav class="navbar navbar-default" role="navigation">
+<!-- Toggle get grouped for better mobile display -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>   
+<div class="collapse navbar-collapse" id="navbar-collapse-2">
+  <ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/Why 0-complexity">Why 0-complexity</a></li>
+    <li><a href="/Solution">Solution</a></li>
+    <li><a href="/About Us">About us</a></li>
+    <li><a href="/Contact Us">Contact us</a></li>
+  </ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/plugins/modernizr.js"></script>
+<script type="text/javascript" src="/plugins/flexslider/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="/plugins/jquery.countTo.js"></script>
+<script type="text/javascript" src="/plugins/flowtype.js"></script>   
+<script src="/plugins/jquery.parallax-1.1.3.js"></script>
+<script src="/plugins/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/template.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-              </div>
-              <!-- /Container ->
-              
-              <!-- Bottom -->
-              <div class="bottom">
-                <!-- Container -->
-                <div class="container">
-                  <span class="copy-text">&copy; 2015 Your Corporation. Theme by <a href="#">Rahisi</a> Themes.</span>
-                  
-                </div>
-                <!-- /Container -->
-              </div>
-              <!-- /Bottom -->
-              
-              
-            </footer>
+  ga('create', 'UA-55191025-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+var __lc = {};
+__lc.license = 4965671;
+
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+
+</body>
+</html>
             {{end}}
         {{end}}
       {{end}}

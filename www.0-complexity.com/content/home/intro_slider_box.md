@@ -3,39 +3,26 @@
 title = "intro_slider_box"
 
 
-slide1_title_main_button = "multipurpose"
-slide1_title_small = "multipurpose"
-slide1_title_large= "modular design"
-slide1_text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
-slide1_button = "learn more"
-slide1_more_link = "#"
-slide1_pic = "/images/screen-4.png" 
+slide1_pic = "/images/slider-1-slide-1.png"
+slide1_title = "We see a need to perceive IT in another way."
+slide1_text1 = "A mind change in how companies are dealing with IT today."
+slide1_text2 = "Cloud Computing is the path towards a clear IT vision."
 
+slide2_pic = "/images/slider-1-slide-2.png"
+slide2_title = "That we need cloud computing is a given."
+slide2_text1 = "But did you experience as well cloud is still complex."
+slide2_text2 = "Are you really sure clouds are bringing the promised savings."
 
-slide2_title_main_button = "multipurpose"
-slide2_title_small = "multipurpose"
-slide2_title_large= "modular design"
-slide2_text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
-slide2_button = "learn more"
-slide2_more_link = "#"
-slide2_pic = "/images/screen-4.png" 
+slide3_pic = "/images/slider-1-slide-3.png"
+slide3_title = "What if there was a way to address cloud in a new way."
+slide3_text1 = "Rechallenging the storage, network and management."
+slide3_text2 = "Bringing it to the feature level of the big boys, at the cost and convenience you wished for."
 
-slide3_title_main_button = "multipurpose"
-slide3_title_small = "multipurpose"
-slide3_title_large= "modular design"
-slide3_text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
-slide3_button = "learn more"
-slide3_more_link = "#"
-slide3_pic = "/images/screen-4.png" 
+slide4_pic = "/images/slider-1-slide-4.png"
+slide4_title = "0-complexity brings a revolutionary new solution."
+slide4_text1 = "Something that has not been done so far."
+slide4_text2 = "Contact us to learn more about this."
 
-
-slide4_title_main_button = "multipurpose"
-slide4_title_small = "multipurpose"
-slide4_title_large= "modular design"
-slide4_text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
-slide4_button = "learn more"
-slide4_more_link = "#"
-slide4_pic = "/images/screen-4.png" 
 
 
 +++
