@@ -1,78 +1,77 @@
-
 <!-- Intro Block
       ============================================ -->
-      {{ range $element :=  .Site.Pages }}
-                            {{ if eq .Section "home" }}
-                                {{ if eq .Title "intro_slider_box" }}
-      <div class="banner">
-<div class="slideshow fullwidth">
-<div class="flexslider loading">
-<ul class="slides">
-        <li style="background-image:url('{{.Params.slide1_pic}}');">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="caption-wrapper">
-<div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
-<h2 class="title">{{.Params.slide1_title}}</h2>
-<p>{{.Params.slide1_text1}}</p>
-<p>{{.Params.slide1_text2}}</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-        <li style="background-image:url('{{.Params.slide2_pic}}');">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="caption-wrapper">
-<div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
-<h2 class="title">{{.Params.slide2_title}}</h2>
-<p>{{.Params.slide2_text1}}</p>
-<p>{{.Params.slide2_text2}}</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-        <li style="background-image:url('{{.Params.slide3_pic}}');">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="caption-wrapper">
-<div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
-<h2 class="title">{{.Params.slide3_title}}</h2>
-<p>{{.Params.slide3_text1}}</p>
-<p>{{.Params.slide3_text2}}</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-        <li style="background-image:url('{{.Params.slide4_pic}}');">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="caption-wrapper">
-<div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
-<h2 class="title">{{.Params.slide4_title}}</h2>
-<p>{{.Params.slide4_text1}}</p>
-<p>{{.Params.slide4_text2}}.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>       
-      </ul>
-</div>
-</div>
-</div>
 
-      {{end}}
+{{ range $element :=  .Site.Pages }}
+      {{ if eq .Section "home" }}
+      {{ if eq .Title "intro_slider_box" }}
+<div class="banner">
+  <div class="slideshow fullwidth">
+    <div class="flexslider loading">
+      <ul class="slides">
+        <li style="background-image:url('{{.Params.slide1_pic}}');">
+          <div class="container">
+            <div class="row">
+              <div class="span12">
+                <div class="caption-wrapper">
+                  <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
+                    <h2 class="title">{{.Params.slide1_title}}</h2>
+                    <p>{{.Params.slide1_text1}}</p>
+                    <p>{{.Params.slide1_text2}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url('{{.Params.slide2_pic}}');">
+          <div class="container">
+            <div class="row">
+              <div class="span12">
+                <div class="caption-wrapper">
+                  <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
+                    <h2 class="title">{{.Params.slide2_title}}</h2>
+                    <p>{{.Params.slide2_text1}}</p>
+                    <p>{{.Params.slide2_text2}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url('{{.Params.slide3_pic}}');">
+          <div class="container">
+            <div class="row">
+              <div class="span12">
+                <div class="caption-wrapper">
+                  <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
+                    <h2 class="title">{{.Params.slide3_title}}</h2>
+                    <p>{{.Params.slide3_text1}}</p>
+                    <p>{{.Params.slide3_text2}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url('{{.Params.slide4_pic}}');">
+          <div class="container">
+            <div class="row">
+              <div class="span12">
+                <div class="caption-wrapper">
+                  <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">
+                    <h2 class="title">{{.Params.slide4_title}}</h2>
+                    <p>{{.Params.slide4_text1}}</p>
+                    <p>{{.Params.slide4_text2}}.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{{end}}
       {{end}}
       {{end}}

@@ -18,14 +18,12 @@ product1_li_6 = "PSINet: Our team has built the first European DC's & Hosting"
             
 
 product2_disc = "The current active companies are:"
-
 product2_li_1 = "Awingu: Virtual cloud desktops and secure access & sharing of your company IT information"
 product2_li_2 = "Amplidata: Fastest & most scalable big file storage system in world"
 product2_li_3 = "loudFounders: Hyper Converged Infrastructure. Ultra reliable secure private cloud"
 product2_li_4 = "Racktivity: Energy and uptime management for the datacenter"
 product2_li_5 = "RogerThat: Mobile application platform"
 product2_li_6 = "Mothership1: Cloud deployment platform that delivers IT resources at unprecedented speeds"
-
 product2_pic = "/images/cloud2.jpg"
 
 +++

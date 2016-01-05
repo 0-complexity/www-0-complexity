@@ -1,64 +1,38 @@
-
-      {{ range $element :=  $.Site.Pages }}
+{{ range $element :=  $.Site.Pages }}
   {{ if eq .Section "home" }}
-      {{ if eq .Title "header" }}  
+      {{ if eq .Title "header" }}
       
-      
-      <body ><div class="admin admin2">
-
-    <div class="navbar navbar-inverse navbar-fixed-top"  style="display:none;">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </a>
-                
-                <div class="nav-collapse collapse">
-                   <ul class="nav pull-left">
-                   $$$menuleft
-                   <li><a href="/System">System</a></li>
-
-                   
-                   </ul>
-                   
-<ul class="nav navbar pull-right">
-    <li>
-        
-        <a href="javascript:;" onclick="nextElementSibling.submit();">Login</a>
-    <form action="#" method="post" class="hide">
-        <input type="hidden" name="user_login_" value="guest"/>
-    </form>
-                
-    </li>
-</ul>
-                   
-                   
-                </div>
+      <body >
+      <div class="admin admin2">
+        <div class="navbar navbar-inverse navbar-fixed-top"  style="display:none;">
+          <div class="navbar-inner">
+            <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+              <div class="nav-collapse collapse">
+                <ul class="nav pull-left">
+                  $$$menuleft
+                  <li><a href="/System">System</a></li>
+                </ul>
+                <ul class="nav navbar pull-right">
+                  <li> <a href="javascript:;" onclick="nextElementSibling.submit();">Login</a>
+                    <form action="#" method="post" class="hide">
+                      <input type="hidden" name="user_login_" value="guest"/>
+                    </form>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-</div>
-<div class="main-navigation fixed">
+      </div>
+      <div class="main-navigation fixed">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <a class="logo" href="/"><img src="/images/logo.png"/></a>
-            </div>
+            <div class="col-md-3"> <a class="logo" href="/"><img src="/images/logo.png"/></a> </div>
             <div class="col-md-9">
               <nav class="navbar navbar-default" role="navigation">
-
                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 </div>
-
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-main-menu">
                     <li class="active"><a href="/" >Home</a></li>
@@ -67,15 +41,14 @@
                     <li><a href="/About us">About us</a></li>
                     <li><a href="/Investors Info">Investors Info</a></li>
                     <li><a href="/Contact us">Contact us</a></li>
-                    </ul>
-
+                  </ul>
                 </div>
               </nav>
             </div>
           </div>
         </div>
       </div>
+      {{end}}
+      {{end}}
+      {{end}}
       
-      {{end}}
-        {{end}}
-      {{end}}

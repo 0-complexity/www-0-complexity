@@ -1,0 +1,58 @@
+{{ range $element :=  .Data.Pages }}
+   {{ if eq .Section "home" }}
+       {{ if eq .Title "rating" }}
+       
+<h1 class="text-center space-top">{{.Params.rating_title}}</h1>
+<div class="separator"></div>
+<!--					<p class="text-center"></p>-->
+<div class="row">
+  <div class="span6">
+    <div class="space-top space-bottom">
+      <h4 class="title">{{.Params.rating1}}</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-default" role="progressbar" data-animate-width="100%"> <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="700">{{.Params.rating1_number}}</span> </div>
+      </div>
+      <h4 class="title">{{.Params.rating2}}</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-default" role="progressbar" data-animate-width="100%"> <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="700">{{.Params.rating2_number}}</span> </div>
+      </div>
+      <h4 class="title">{{.Params.rating3}}</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-default" role="progressbar" data-animate-width="100%"> <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="700">{{.Params.rating3_number}}</span> </div>
+      </div>
+      <h4 class="title">{{.Params.rating4}}</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-default" role="progressbar" data-animate-width="100%"> <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="700">{{.Params.rating4_number}}</span> </div>
+      </div>
+      <h4 class="title">{{.Params.rating5}}</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-default" role="progressbar" data-animate-width="100%"> <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="700">{{.Params.rating5_number}}</span> </div>
+      </div>
+    </div>
+  </div>
+  <div class="span6">
+    <div class="stats">
+      <div class="stat-box bt-clear"> <i class="fa fa-{{.Params.icon1}}"></i>
+        <h5>{{.Params.icon1_disc}}</h5>
+        <span data-to="{{.Params.icon1_number}}" data-speed="1000">0</span> </div>
+      <div class="stat-box bt-clear br-clear"> <i class="fa fa-{{.Params.icon2}}"></i>
+        <h5>{{.Params.icon2_disc}}</h5>
+        <span data-to="{{.Params.icon2_number}}" data-speed="1000">0</span> </div>
+      <div class="stat-box"> <i class="fa fa-{{.Params.icon3}}"></i>
+        <h5>{{.Params.icon3_disc}}</h5>
+        <span data-to="{{.Params.icon3_number}}" data-speed="5000">0</span> </div>
+      <div class="stat-box br-clear"> <i class="fa fa-{{.Params.icon4}}"></i>
+        <h5>{{.Params.icon4_disc}}</h5>
+        <span data-to="{{.Params.icon4_number}}" data-speed="1000">0</span> </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{{ end }}
+			{{ end }}
+{{ end }} 

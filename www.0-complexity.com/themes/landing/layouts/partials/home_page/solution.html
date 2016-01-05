@@ -3,69 +3,66 @@
 {{ range $element :=  .Data.Pages }}
    {{ if eq .Section "home" }}
        {{ if eq .Title "solution_section" }}
-       <section class="main">
+      
+<section class="main">
 <div class="section">
-<div class="container">
-<div class="row">
-<div class="span12">
-<h1 class="text-center">{{.Params.section_title}}</h1>
-<div class="separator">
-</div>
-<p class="text-center">{{.Params.section_disc}}</p>
-<div class="row">
-<div class="span4">
-<div class="icon-box">
-<i class="fa fa-{{.Params.solution1_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
-<h2 class="title">{{.Params.solution1_title}}</h2>
-<p>{{.Params.solution1_disc}}</p>
-</div>
-</div>
-<div class="span4">
-<div class="icon-box">
-<i class="fa fa-{{.Params.solution2_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i>
-<h2 class="title">{{.Params.solution2_title}}</h2>
-<p>{{.Params.solution2_disc}}</p>
-</div>
-</div>
-<div class="span4">
-<div class="icon-box">
-<i class="fa fa-{{.Params.solution3_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
-<h2 class="title">{{.Params.solution3_title}}</h2>
-<p>{{.Params.solution3_disc}}</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1 class="text-center">{{.Params.section_title}}</h1>
+        <div class="separator"> </div>
+        <p class="text-center">{{.Params.section_disc}}</p>
+        <div class="row">
+          <div class="span4">
+            <div class="icon-box"> <i class="fa fa-{{.Params.solution1_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
+              <h2 class="title">{{.Params.solution1_title}}</h2>
+              <p>{{.Params.solution1_disc}}</p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="icon-box"> <i class="fa fa-{{.Params.solution2_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i>
+              <h2 class="title">{{.Params.solution2_title}}</h2>
+              <p>{{.Params.solution2_disc}}</p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="icon-box"> <i class="fa fa-{{.Params.solution3_icon}} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
+              <h2 class="title">{{.Params.solution3_title}}</h2>
+              <p>{{.Params.solution3_disc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="section bg-color-light paddB0">
-<div class="container">
-<div class="row">
-<div class="span6">
-<img class="img-responsive center-block storage1" src="{{.Params.solution_pic}}" alt="iVega">
+  <div class="container">
+    <div class="row">
+      <div class="span6"> <img class="img-responsive center-block storage1" src="{{.Params.solution_pic}}" alt="iVega"> </div>
+      <div class="span6">
+        <h2 class="title">{{.Params.solution_title}}</h2>
+        <p class="space">{{.Params.solution_disc}}</p>
+        <p><a href='{{.Params.button_link}}'   class="btn btn-default btn-lg" >{{.Params.button_text}}</a></p>
+      </div>
+    </div>
+  </div>
+  <p><br>
+  </p>
+  <div class="bg-color-gray call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <h2 class="text-center">{{.Params.contact_text}}</h2>
+        </div>
+        <div class="span4 text-center p0">
+          <p><a href='{{.Params.contact_button_link}}' class="btn btn-lg btn-white" >{{.Params.contact_button_text}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="span6">
-<h2 class="title">{{.Params.solution_title}}</h2>
-<p class="space">{{.Params.solution_disc}}</p>
-<p><a href='{{.Params.button_link}}'   class="btn btn-default btn-lg" >{{.Params.button_text}}</a></p>
-</div>
-</div>
-</div>
-<p><br></p>
-<div class="bg-color-gray call-to-action">
-<div class="container">
-<div class="row">
-<div class="span8">
-<h2 class="text-center">{{.Params.contact_text}}</h2>
-</div>
-<div class="span4 text-center p0">
-<p><a href='{{.Params.contact_button_link}}' class="btn btn-lg btn-white" >{{.Params.contact_button_text}}</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+
        {{end}}
     {{end}}
 {{end}}

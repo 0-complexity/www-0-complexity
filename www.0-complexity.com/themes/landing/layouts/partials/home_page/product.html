@@ -1,56 +1,52 @@
-
 <!-- Content Block
       ============================================ -->
 
-      {{ range $element :=  .Data.Pages }}
+{{ range $element :=  .Data.Pages }}
                   {{ if eq .Section "home" }}
                       {{ if eq .Title "product" }}
-      <div class="section">
+<div class="section">
 <div class="container">
 <div class="row">
 <div class="span12">
 <h1 class="text-center">{{.Params.section_title}}</h1>
-          <div class="separator"></div>
-          <p class="text-center">{{.Params.section_disc}}</p>
-          <br>
+<div class="separator"></div>
+<p class="text-center">{{.Params.section_disc}}</p>
+<br>
 <div class="row">
-<div class="span6 spanpush-6">
-<img class="img-responsive center-block pb object-non-visible cloud1" data-animation-effect="fadeInUpSmall" src="{{.Params.product1_pic}}" alt="iVega">
-</div>
-<div class="span6 spanpull-6">
-<h3 class="title">{{.Params.product1_title}}</h3>
-<p>{{.Params.product1_disc}}</p>
-<ul class="list-triangle">
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall">{{.Params.product1_li_1}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">{{.Params.product1_li_2}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">{{.Params.product1_li_3}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_4}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_5}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_6}}</li>
-              </ul>
-              <br><br>
-
-<!--              <a href="page-about.html" class="btn btn-white btn-lg object-non-visible" data-animation-effect="flipInX"  data-effect-delay="200">Learn More</a>-->
-</div>
-<div class="span6 spanpush-6">
-<h3>{{.Params.product2_disc}}</h3>
-              <ul class="list-triangle">
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall">{{.Params.product2_li_1}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">{{.Params.product2_li_2}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">{{.Params.product2_li_3}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_4}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_5}}</li>
-                <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_6}}</li>
-              </ul>
-
-<!--              <a href="page-about.html" class="btn btn-white btn-lg object-non-visible" data-animation-effect="flipInX"  data-effect-delay="200">Learn More</a>-->
-</div>
-<div class="span6 spanpull-6">
-<img class="img-responsive center-block pb object-non-visible cloud2" data-animation-effect="fadeInUpSmall" src="{{.Params.product2_pic}}" alt="iVega">
-</div>
+  <div class="span6 spanpush-6"> <img class="img-responsive center-block pb object-non-visible cloud1" data-animation-effect="fadeInUpSmall" src="{{.Params.product1_pic}}" alt="iVega"> </div>
+  <div class="span6 spanpull-6">
+    <h3 class="title">{{.Params.product1_title}}</h3>
+    <p>{{.Params.product1_disc}}</p>
+    <ul class="list-triangle">
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall">{{.Params.product1_li_1}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">{{.Params.product1_li_2}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">{{.Params.product1_li_3}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_4}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_5}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product1_li_6}}</li>
+    </ul>
+    <br>
+    <br>
+    
+    <!--              <a href="page-about.html" class="btn btn-white btn-lg object-non-visible" data-animation-effect="flipInX"  data-effect-delay="200">Learn More</a>--> 
+  </div>
+  <div class="span6 spanpush-6">
+    <h3>{{.Params.product2_disc}}</h3>
+    <ul class="list-triangle">
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall">{{.Params.product2_li_1}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">{{.Params.product2_li_2}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">{{.Params.product2_li_3}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_4}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_5}}</li>
+      <li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">{{.Params.product2_li_6}}</li>
+    </ul>
+    
+    <!--              <a href="page-about.html" class="btn btn-white btn-lg object-non-visible" data-animation-effect="flipInX"  data-effect-delay="200">Learn More</a>--> 
+  </div>
+  <div class="span6 spanpull-6"> <img class="img-responsive center-block pb object-non-visible cloud2" data-animation-effect="fadeInUpSmall" src="{{.Params.product2_pic}}" alt="iVega"> </div>
 </div>
 <br>
-          <hr>
+<hr>
 {{end}}
 {{end}}
 {{end}}
