@@ -26,15 +26,15 @@ icon1_number = "15"
 
 icon2 = "user"
 icon2_disc = "Group Employees"
-icon2_number = "22"
+icon2_number = "200"
 
 icon3 = "briefcase"
 icon3_disc = "Users reached"
-icon3_number = "0"
+icon3_number = "1000"
 
 icon4 = "thumbs-o-up"
 icon4_disc = "% of satisfaction"
-icon4_number = "0"
+icon4_number = "99"
 
 
 +++
