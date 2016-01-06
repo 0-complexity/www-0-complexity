@@ -1,55 +1,101 @@
 {{ partial "head.html" . }}
-
-	<body class="no-trans front-page transparent-header ">
-	    <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-	        <div class="page-wrapper">
-			{{ partial "header.html" . }}
-				<div id="wrap">
-				
-					<section class="page-title">
-				<div class="container">
-
-					<header>
-
-						<ul class="breadcrumb">
-							<li><a href="/">Home</a></li>
-							<li class="active">{{title .Section}}</li>
-						</ul>
-
-						<h2>
-							{{ .Title }}
-						</h2>
-
-					</header>
-
-				</div>			
-			</section>
-
-
-				<div class="main-container" id="main">
-					<div class="container page-container">
-						<p>{{ .Content }}</p>
-					</div>
-				</div>
-			</div>
-			{{ partial "footer.html" . }}
-			</div>
-			<script type="text/javascript" src="/plugins/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="/plugins/jquery.isotope.js"></script>
-		<script type="text/javascript" src="/plugins/masonry.js"></script>
-
-		<script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="/plugins/knob/js/jquery.knob.js"></script>
-		<script type="text/javascript" src="/plugins/flexslider/jquery.flexslider-min.js"></script>
-
-		<!-- REVOLUTION SLIDER -->
-		<script type="text/javascript" src="/plugins/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="/js/revolution_slider.js"></script>
-		
-
-		<script type="text/javascript" src="/js/scripts.js"></script>
-	</body>
+<style type="text/css">
+.main-navigation { box-shadow: 0px 3px 3px #EBEBEB; }
+.page-wrapper { border: none; }
+}
+</style>
+<body class="page-bg">
+<div class="page-wrapper"> {{ partial "header.html" . }}
+  <section class="main">
+    <div class="page-intro">
+      <div class="container">
+        <div class="span6">
+          <h1 class="page-title">{{ .Title }}</h1>
+        </div>
+        <div class="span6">
+          <div class="breadcrumb-wrapper">
+            <ol class="breadcrumb">
+              <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+              <li class="active">{{ .Title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content-wrapper">
+      <div class="container">
+        <div class="row">
+          <section class="main-content span12"> {{ if eq .Title "Ivestors Info" }}
+            <link  href='/css/blueimp-gallery.css' type='text/css' rel='stylesheet' />
+            <link  href='/css/blueimp-gallery-indicator.css' type='text/css' rel='stylesheet' />
+            <style type='text/css' >
+				.links a { margin: 12px;display: inline-block;border: 2px solid #E1E1E1;} .blueimp-gallery > .slides { padding: 30px 0;}
+				</style>
+            {{ end }}
+            {{ if eq .Title "Why 0-complexity" }}
+            <div class="span9">
+              <h3 class="title">Storage is still the most difficult and complex part in any cloud. This storage problem is bigger than ever expected because:</h3>
+              <ul id="ul_id" class="list-triangle">
+                <li>More & more iops are required, people are now used to SSD speeds.</li>
+                <li>Networks cannot support latency required to create an SSD performance network based storage layer.</li>
+                <li>Storage in cloud is as well expensive: SSDs are still expensive and standard storage looks cheap, but is often a lot more expensive than initially thought as of hidden fees in bandwidth usage.</li>
+              </ul>
+              <p>The cloud is often presented super complex, with each time a lot of work before you can automate using clouds.</p>
+            </div>
+            <div class="span3">
+              <p><img src='/images/machine1.jpg' alt='/images/machine1.jpg'  style='clear:both;' /></p>
+            </div>
+            <div class="separator MTB"> </div>
+            <div class="span3">
+              <p><img src='/images/machine2.jpg' alt='/images/machine2.jpg'  style='clear:both;' /></p>
+            </div>
+            <div class="span9">
+              <h3 class="title">Finally, The cloud imbalance is that The cloud is still very expensive</h3>
+              <ul id="ul_id" class="list-triangle">
+                <li>Hetzner, Colocation + own server, OVH = 10 times more cost effective than Google</li>
+                <ul >
+                  <li>For a reference machine of 2GB RAM, clouds like amazon aws and google, charge 100-200 USD / month when you take into account essential options with the selected package.</li>
+                  <li>Volume dedicated hosters like Hetzner, OVH, charge 60 USD for a 32 GB RAM Machine.</li>
+                </ul>
+                <li>But</li>
+                <ul >
+                  <li>Hetzner, Colo, OVH miss all the great features people want.</li>
+                  <li>NO</li>
+                  <ul >
+                    <li>(Virtual) storage network</li>
+                    <li>No snapshots</li>
+                    <li>No storage reliability (on local SSD or HD)</li>
+                    <li>No network virtualization</li>
+                    <li>No automation</li>
+                    <li>Virtualization</li>
+                  </ul>
+                </ul>
+              </ul>
+            </div>
+            <br>
+            <br>
+            <br>
+            {{ end }}
+            {{ if eq .Title "Ivestors Info" }}
+            {{ end }}
+            {{ if eq .Title "Ivestors Info" }}
+            {{ end }}
+            {{ if eq .Title "Ivestors Info" }}
+            {{ end }}
+            {{ .Content }} </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ partial "footer.html" . }} </div>
+<script src="/js/jquery-latest.min.js"></script> 
+<script src="/js/bootstrap.min.js"></script> 
+<script src="/js/uikit.min.js"></script> 
+{{ if eq .Title "Ivestors Info" }} 
+<script src="/js/blueimp-gallery.min.js"> </script> 
+<script src="/js/blueimp-gallery-fullscreen.js"></script> 
+<script src="/js/blueimp-gallery-indicator.js"></script> 
+<script src="/js/jquery.blueimp-gallery.min.js"></script> 
+{{ end }}
+</body>
 </html>

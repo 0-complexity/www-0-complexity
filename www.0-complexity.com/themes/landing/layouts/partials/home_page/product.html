@@ -1,9 +1,6 @@
-<!-- Content Block
-      ============================================ -->
-
 {{ range $element :=  .Data.Pages }}
-                  {{ if eq .Section "home" }}
-                      {{ if eq .Title "product" }}
+    {{ if eq .Section "home" }}
+        {{ if eq .Title "product" }}
 <div class="section">
 <div class="container">
 <div class="row">

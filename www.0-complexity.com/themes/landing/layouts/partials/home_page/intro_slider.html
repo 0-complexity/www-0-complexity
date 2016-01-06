@@ -1,9 +1,6 @@
-<!-- Intro Block
-      ============================================ -->
-
 {{ range $element :=  .Site.Pages }}
-      {{ if eq .Section "home" }}
-      {{ if eq .Title "intro_slider_box" }}
+{{ if eq .Section "home" }}
+{{ if eq .Title "intro_slider_box" }}
 <div class="banner">
   <div class="slideshow fullwidth">
     <div class="flexslider loading">
@@ -73,5 +70,5 @@
   </div>
 </div>
 {{end}}
-      {{end}}
-      {{end}}
+{{end}}
+{{end}}
