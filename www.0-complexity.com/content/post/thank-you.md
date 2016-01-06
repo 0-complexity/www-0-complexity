@@ -3,4 +3,4 @@
 title = "Thank you!"
 +++
 
-### The white paper will be sent to you in the next 24 hours.
+### Thank you very much for your message will get back to you shortly.
