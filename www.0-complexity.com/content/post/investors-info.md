@@ -1,7 +1,7 @@
 
 +++
 #Don't remove title!
-title = "Ivestors Info"
+title = "Investors Info"
 
 
 gallery_pic1 = "/images/gallery/1.jpg"
