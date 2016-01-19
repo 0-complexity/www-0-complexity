@@ -20,12 +20,12 @@ solution3_disc = "When building complex or larger cloud solutions network virtua
 solution_pic = "/images/storage1.png"
 solution_title = "Storage is still the most difficult and complex part in any cloud."
 solution_disc = "More & more iops are required, people are now used to SSD speeds. Networks cannot support latency required to create an SSD performance network based storage layer. Storage in cloud is as well expensive: SSDs are still expensive and standard storage looks cheap, but is often a lot more expensive than initially thought as of hidden fees in bandwidth usage."
-button_link = "Why 0-complexity"
+button_link = "why-0-complexity"
 button_text = "Learn More"
 
 contact_text = "Contact us to discuss about our solution!"
 
-contact_button_link = "Contact us"
+contact_button_link = "contact-us"
 contact_button_text = "Contact us"
 
 
