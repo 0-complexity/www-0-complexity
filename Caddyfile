@@ -1,12 +1,12 @@
-http://0-complexity:5555 {
+http://0-complexity.aydo.com:4352 {
     bind 0.0.0.0
     gzip
-    root www.0-complexity.com
+    root www.0-complexity.com/en
     git {
        repo git@git.aydo.com/static-websites/www-0-complexity.git
        interval 300
        key ../keys/id_rsa
-       path ../
-       then ./hugo-init
+       path ../..
+       then hugo -s www.0-complexity.com
     }
 }
