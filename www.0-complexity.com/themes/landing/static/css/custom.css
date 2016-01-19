@@ -54,3 +54,8 @@ background: #DFDFDF; padding: 10px 0 12px 0; }
 .cloud2 {margin-top: 45px;}
 .admin.admin2 { display: none; }
 footer { margin-top: 40px;}
+/*sticky footer*/
+html { position: relative; min-height: 100%;}
+body {margin-bottom:101px;}
+footer { position: absolute; bottom: 0; width: 100%; }
+/*end of sticky footer*/
