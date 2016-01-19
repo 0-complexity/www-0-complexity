@@ -1,4 +1,4 @@
-http://0-complexity.aydo.com:6666 {
+http://0-complexity.aydo.com:4352 {
     bind 0.0.0.0
     gzip
     root www.0-complexity.com/en
