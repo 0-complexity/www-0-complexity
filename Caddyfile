@@ -3,7 +3,7 @@ http://0-complexity.aydo.com:4352 {
     gzip
     root www.0-complexity.com/en
     git {
-       repo https://github.com/0-complexity/www-0-complexity.git
+       repo git@github.com:0-complexity/www-0-complexity.git
        interval 300
        key ../keys/id_rsa
        path ../..
